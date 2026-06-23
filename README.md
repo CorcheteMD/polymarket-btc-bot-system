@@ -9,6 +9,7 @@ Case-study repository for a BTC/Polymarket trading-bot architecture: market disc
 - A deterministic decision orchestrator that blocks live actions unless evidence and gates agree.
 - Public data contracts for market ticks, microstructure features, and fillability checks.
 - A continuation roadmap for another engineer to extend the safe scaffold.
+- The public-safe skill/orchestrator layer used to route discovery, streaming, research, risk, quality, and promotion review.
 - A publication-safe example for portfolio review, CORFO-style technical credibility, and LinkedIn storytelling.
 
 ## What This Does Not Include
@@ -44,6 +45,9 @@ docs/
   sanitization-report.md
 examples/
   candidate_evidence.json
+skills/
+  README.md
+  <skill-name>/SKILL.md
 src/
   contracts.py
   polymarket_decision_orchestrator.py

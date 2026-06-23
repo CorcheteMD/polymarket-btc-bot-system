@@ -31,8 +31,21 @@ The raw workspace must not be published directly. It contains a local Git histor
 - Decision-state contract.
 - A deterministic, non-trading orchestrator example.
 - Unit tests for the public orchestrator.
+- Public-safe skill/orchestrator layer under `skills/`, limited to routing, evidence, safety, quality, and review contracts.
+
+## Skill Layer Added
+
+The second publication pass added `SKILL.md` files from the private workspace after excluding settings, caches, raw references, provider configs, credentials, live data, and runtime artifacts.
+
+Included categories:
+
+- Polymarket discovery, streaming, archive, microstructure, research, signal, risk, execution-compliance, and debugger skills.
+- HB profitability and evidence-loop skills.
+- Bot harness, status, memory, control-plane, and safety skills.
+- Quality orchestration skills.
+
+The skills may mention forbidden actions such as `.env`, private keys, VPS, PM2, or live orders only as safety boundaries. They do not contain actual credentials or live endpoint details.
 
 ## Gate Reminder
 
 Create the GitHub repository as private first. Make it public only after a human review of this sanitized folder.
-
