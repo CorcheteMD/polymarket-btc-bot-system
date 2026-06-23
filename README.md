@@ -40,6 +40,7 @@ The important rule is simple: no component should both create a signal and execu
 ```text
 docs/
   architecture.md
+  backtesting-data-requirements.md
   continuation-guide.md
   data-contract.md
   execution-feasibility-lessons.md
@@ -96,3 +97,5 @@ contract -> synthetic fixture -> deterministic test -> implementation
 Private adapters, live execution, and strategy parameters belong outside this public repo.
 
 For the highest-value engineering lesson, read `docs/execution-feasibility-lessons.md` before touching execution logic.
+
+For builders who want to collect their own data, read `docs/backtesting-data-requirements.md`.

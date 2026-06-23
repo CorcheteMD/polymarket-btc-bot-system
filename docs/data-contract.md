@@ -2,6 +2,8 @@
 
 The private workspace used large tick, order-book, and replay files. Those files are intentionally excluded. This public contract describes the shape of data a continuation engineer would need.
 
+For the full collector schema, see `docs/backtesting-data-requirements.md`.
+
 ## Market Tick
 
 | Field | Type | Notes |
@@ -39,3 +41,6 @@ An implied price is not the same as an executable ask. A continuation build must
 
 Many trading systems fail by confusing "the price moved" with "I could have filled there."
 
+## Collector Principle
+
+Capture market context before you know which feature will matter. Missing ticks, missing book freshness, missing event lineage, and missing resolution labels cannot be reconstructed reliably after the fact.
