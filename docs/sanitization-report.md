@@ -32,6 +32,9 @@ The raw workspace must not be published directly. It contains a local Git histor
 - A deterministic, non-trading orchestrator example.
 - Unit tests for the public orchestrator.
 - Public-safe skill/orchestrator layer under `skills/`, limited to routing, evidence, safety, quality, and review contracts.
+- Sanitized system map, execution-feasibility lessons, trade-manager design, test strategy, and private-exclusion map.
+- Synthetic JSONL fixture for implied-vs-executable price review.
+- Public trade lifecycle scaffold with idempotent close and restart-recovery tests.
 
 ## Skill Layer Added
 
@@ -45,6 +48,31 @@ Included categories:
 - Quality orchestration skills.
 
 The skills may mention forbidden actions such as `.env`, private keys, VPS, PM2, or live orders only as safety boundaries. They do not contain actual credentials or live endpoint details.
+
+## Second Value Extraction Pass
+
+The second pass reviewed architecture, feasibility, audit, roadmap, and system-map material from the private workspace. Public value was extracted as reusable engineering guidance rather than raw operational artifacts.
+
+Added:
+
+- `docs/system-map.md`
+- `docs/execution-feasibility-lessons.md`
+- `docs/trade-manager-design.md`
+- `docs/testing-strategy.md`
+- `docs/private-exclusion-map.md`
+- `src/trade_lifecycle.py`
+- `tests/test_trade_lifecycle.py`
+- `examples/synthetic_ticks.jsonl`
+
+Still excluded:
+
+- raw market datasets
+- wallet studies
+- live runner scripts
+- exact private strategy thresholds
+- VPS details
+- process commands
+- raw audit files containing operational references
 
 ## Gate Reminder
 

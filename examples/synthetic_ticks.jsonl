@@ -1,0 +1,4 @@
+{"timestamp_ms": 1710000000000, "asset": "BTC", "condition_id": "synthetic-1", "outcome": "DOWN", "price": 0.05, "best_bid": 0.01, "best_ask": 0.99, "seconds_left": 85, "market_type": "5m"}
+{"timestamp_ms": 1710000001000, "asset": "BTC", "condition_id": "synthetic-1", "outcome": "DOWN", "price": 0.07, "best_bid": 0.06, "best_ask": 0.09, "seconds_left": 82, "market_type": "5m"}
+{"timestamp_ms": 1710000002000, "asset": "BTC", "condition_id": "synthetic-1", "outcome": "UP", "price": 0.93, "best_bid": 0.90, "best_ask": 0.94, "seconds_left": 81, "market_type": "5m"}
+

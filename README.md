@@ -8,6 +8,8 @@ Case-study repository for a BTC/Polymarket trading-bot architecture: market disc
 - How I separate market discovery, streaming, signal research, risk review, and execution.
 - A deterministic decision orchestrator that blocks live actions unless evidence and gates agree.
 - Public data contracts for market ticks, microstructure features, and fillability checks.
+- Public lessons from the execution-feasibility audit: implied price is not executable price.
+- A trade lifecycle scaffold with idempotent close and restart-recovery behavior.
 - A continuation roadmap for another engineer to extend the safe scaffold.
 - The public-safe skill/orchestrator layer used to route discovery, streaming, research, risk, quality, and promotion review.
 - A publication-safe example for portfolio review, CORFO-style technical credibility, and LinkedIn storytelling.
@@ -40,11 +42,17 @@ docs/
   architecture.md
   continuation-guide.md
   data-contract.md
+  execution-feasibility-lessons.md
+  private-exclusion-map.md
   risk-gates.md
   roadmap.md
   sanitization-report.md
+  system-map.md
+  testing-strategy.md
+  trade-manager-design.md
 examples/
   candidate_evidence.json
+  synthetic_ticks.jsonl
 skills/
   README.md
   <skill-name>/SKILL.md
@@ -52,9 +60,11 @@ src/
   contracts.py
   polymarket_decision_orchestrator.py
   reporting.py
+  trade_lifecycle.py
 tests/
   test_contracts.py
   test_polymarket_decision_orchestrator.py
+  test_trade_lifecycle.py
 ```
 
 ## Quick Start
@@ -84,3 +94,5 @@ contract -> synthetic fixture -> deterministic test -> implementation
 ```
 
 Private adapters, live execution, and strategy parameters belong outside this public repo.
+
+For the highest-value engineering lesson, read `docs/execution-feasibility-lessons.md` before touching execution logic.
