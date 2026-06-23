@@ -1,0 +1,37 @@
+# Secrets and local credentials
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+
+# Runtime and market data
+data/
+logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.pkl
+*.parquet
+*.feather
+*.pid
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+
+# Local agent/editor state
+.agent/
+.agents/
+.brain/
+.claude/settings.local.json
+tmp/
+
