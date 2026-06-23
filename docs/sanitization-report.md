@@ -63,6 +63,12 @@ Added:
 - `src/trade_lifecycle.py`
 - `tests/test_trade_lifecycle.py`
 - `examples/synthetic_ticks.jsonl`
+- `docs/forensic-audit-playbook.md`
+- `docs/bug-prevention-methodology.md`
+- `docs/backtest-methodology.md`
+- `docs/private-source-inventory-before-deletion.md`
+- `src/backtesting_schema.py`
+- `tests/test_backtesting_schema.py`
 
 Still excluded:
 

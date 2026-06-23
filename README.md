@@ -41,10 +41,14 @@ The important rule is simple: no component should both create a signal and execu
 docs/
   architecture.md
   backtesting-data-requirements.md
+  backtest-methodology.md
+  bug-prevention-methodology.md
   continuation-guide.md
   data-contract.md
   execution-feasibility-lessons.md
+  forensic-audit-playbook.md
   private-exclusion-map.md
+  private-source-inventory-before-deletion.md
   risk-gates.md
   roadmap.md
   sanitization-report.md
@@ -59,10 +63,12 @@ skills/
   <skill-name>/SKILL.md
 src/
   contracts.py
+  backtesting_schema.py
   polymarket_decision_orchestrator.py
   reporting.py
   trade_lifecycle.py
 tests/
+  test_backtesting_schema.py
   test_contracts.py
   test_polymarket_decision_orchestrator.py
   test_trade_lifecycle.py
