@@ -7,6 +7,8 @@ Case-study repository for a BTC/Polymarket trading-bot architecture: market disc
 - A layered architecture for a prediction-market bot.
 - How I separate market discovery, streaming, signal research, risk review, and execution.
 - A deterministic decision orchestrator that blocks live actions unless evidence and gates agree.
+- Public data contracts for market ticks, microstructure features, and fillability checks.
+- A continuation roadmap for another engineer to extend the safe scaffold.
 - A publication-safe example for portfolio review, CORFO-style technical credibility, and LinkedIn storytelling.
 
 ## What This Does Not Include
@@ -35,11 +37,19 @@ The important rule is simple: no component should both create a signal and execu
 ```text
 docs/
   architecture.md
+  continuation-guide.md
+  data-contract.md
   risk-gates.md
+  roadmap.md
   sanitization-report.md
+examples/
+  candidate_evidence.json
 src/
+  contracts.py
   polymarket_decision_orchestrator.py
+  reporting.py
 tests/
+  test_contracts.py
   test_polymarket_decision_orchestrator.py
 ```
 
@@ -61,3 +71,12 @@ python -m unittest discover -s tests
 
 This repository is not financial advice and is not a trading system ready for live use. It is a sanitized engineering artifact that demonstrates architecture, risk controls, and decision discipline.
 
+## Continue The Work
+
+Start with `docs/continuation-guide.md`. The public path is:
+
+```text
+contract -> synthetic fixture -> deterministic test -> implementation
+```
+
+Private adapters, live execution, and strategy parameters belong outside this public repo.

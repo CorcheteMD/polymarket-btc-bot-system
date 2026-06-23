@@ -1,0 +1,17 @@
+{
+  "evidence_layer": "SHADOW_WOULD_BUY",
+  "replay_positive": true,
+  "shadow_positive": true,
+  "live_fill_positive": false,
+  "cash_truth_positive": false,
+  "fillability_adjusted_pnl": 0.0,
+  "max_loss_streak": 2,
+  "kill_switch_active": false,
+  "heartbeat_fresh": true,
+  "human_approval": false,
+  "notes": [
+    "Synthetic example. Not a real market result.",
+    "Replay and shadow are not enough for live promotion."
+  ]
+}
+
